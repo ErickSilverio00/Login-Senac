@@ -1,0 +1,117 @@
+:root {
+    --branco: #FFFFFF;
+    --branco-rose: #FFF4CF;
+    --laranja-claro: #FFCB42;
+    --laranja-escuro: #FFB200;
+    --azul: #277BC0;
+    --preto: #000000;
+    --borda: 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+    --fonte-principal: 'Montserrat';
+}
+
+body {
+    background-image: url("./assets/imagem-de-fundo.png");
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: right;
+    margin: 2em 6em;
+    margin-bottom: 4em;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--azul);
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin: 8% auto 0;
+}
+
+.corpo__primeiras-linhas {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.corpo__primeiras-linhas img {
+    width: 7em;
+}
+
+.corpo__primeiras-linhas h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--branco);
+}
+
+.corpo__primeiras-linhas p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--branco);
+}
+
+.corpo__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.corpo__inputs input {
+    padding: 1.3em;
+    border-radius: 0.7em;
+    border-color: var(--azul);
+}
+
+.corpo__inputs input::placeholder {
+    color: var(--azul);
+}
+
+.corpo__inputs a {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    color: var(--branco);
+    background-color: var(--azul);
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+
+.corpo__cadastro-esqueceu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.corpo__cadastro-esqueceu a {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1em;
+    color: var(--branco);
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho {
+        margin: 2em 1em;
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .corpo {
+        width: 91%;
+        margin-inline: 1em;
+    }
+}
